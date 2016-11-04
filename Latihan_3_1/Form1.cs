@@ -26,11 +26,11 @@ namespace Latihan_3_1
         {
             foreach (FontFamily oneFontFamily in FontFamily.Families)
             {
-                comboBox2.Items.Add(oneFontFamily.Name);
+                toolStripComboBox2.Items.Add(oneFontFamily.Name);
             }
 
-            comboBox2.Text = this.richTextBox1.Font.Name.ToString();
-            comboBox1.Text = "8";
+            toolStripComboBox2.Text = this.richTextBox1.Font.Name.ToString();
+            toolStripComboBox1.Text = "8";
             richTextBox1.Focus();
             Color clr = new Color();
             PropertyInfo[] colors = clr.GetType().GetProperties();
@@ -44,11 +44,12 @@ namespace Latihan_3_1
                 }
             }
             comboBox3.SelectedIndex = 3;
-            comboBox2 ya .Text = "Calibri";
+            toolStripComboBox2.Text = "Calibri";
             comboBox3.Text = "Black";
             this.comboBox3.DrawItem += new DrawItemEventHandler(comboBox3_DrawItem);
-
-            
+            toolStripButton1.CheckOnClick = true;
+            toolStripButton2.CheckOnClick = true;
+            toolStripButton3.CheckOnClick = true;
         }
 
 
@@ -60,10 +61,6 @@ namespace Latihan_3_1
             richTextBox1.SelectionFont = new Font(richTextBox1.Font.FontFamily, size);
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            richTextBox1.SelectionFont = new Font(comboBox2.SelectedItem.ToString(), 40);
-        }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         { 
@@ -94,6 +91,120 @@ namespace Latihan_3_1
 
 
 
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            float size = Convert.ToSingle(((ToolStripComboBox)sender).Text);
 
+            richTextBox1.SelectionFont = new Font(richTextBox1.Font.FontFamily, size);
+        }
+
+        private void toolStripComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionFont = new Font(toolStripComboBox2.SelectedItem.ToString(), 8);
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            System.Drawing.FontStyle state = (toolStripButton1.Checked) ? FontStyle.Bold : FontStyle.Regular;
+            state |= (toolStripButton2.Checked) ? FontStyle.Italic : FontStyle.Regular;
+            state |= (toolStripButton3.Checked) ? FontStyle.Underline : FontStyle.Regular;
+            int start = richTextBox1.SelectionStart;
+            int finish = richTextBox1.SelectionLength;
+
+            if (finish != 0)
+            {
+
+                for (int i = start; i < start + finish; i++)
+                {
+                    richTextBox1.SelectionStart = i;
+                    richTextBox1.SelectionLength = 1;
+                    Font font = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, state);
+                    richTextBox1.SelectionFont = font;
+                }
+                richTextBox1.SelectionStart = start;
+                richTextBox1.SelectionLength = finish;
+            }
+            else
+            {
+                Font font = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, state);
+                richTextBox1.SelectionFont = font;
+            }
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            System.Drawing.FontStyle state = (toolStripButton1.Checked) ? FontStyle.Bold : FontStyle.Regular;
+            state |= (toolStripButton2.Checked) ? FontStyle.Italic : FontStyle.Regular;
+            state |= (toolStripButton3.Checked) ? FontStyle.Underline : FontStyle.Regular;
+            int start = richTextBox1.SelectionStart;
+            int finish = richTextBox1.SelectionLength;
+            if (finish != 0)
+            {
+                for (int i = start; i < start + finish; i++)
+                {
+                    richTextBox1.SelectionStart = i;
+                    richTextBox1.SelectionLength = 1;
+                    Font font = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, state);
+                    richTextBox1.SelectionFont = font;
+                }
+                richTextBox1.SelectionStart = start;
+                richTextBox1.SelectionLength = finish;
+            }
+            else
+            {
+                Font font = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, state);
+                richTextBox1.SelectionFont = font;
+            }
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            System.Drawing.FontStyle state = (toolStripButton1.Checked) ? FontStyle.Bold : FontStyle.Regular;
+            state |= (toolStripButton2.Checked) ? FontStyle.Italic : FontStyle.Regular;
+            state |= (toolStripButton3.Checked) ? FontStyle.Underline : FontStyle.Regular;
+            int start = richTextBox1.SelectionStart;
+            int finish = richTextBox1.SelectionLength;
+            if (finish != 0)
+            {
+                for (int i = start; i < start + finish; i++)
+                {
+                    richTextBox1.SelectionStart = i;
+                    richTextBox1.SelectionLength = 1;
+                    Font font = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, state);
+                    richTextBox1.SelectionFont = font;
+                }
+                richTextBox1.SelectionStart = start;
+                richTextBox1.SelectionLength = finish;
+            }
+            else
+            {
+                Font font = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, state);
+                richTextBox1.SelectionFont = font;
+            }
+        }
+
+        private void richTextBox1_SelectionChanged(object sender, EventArgs e)
+        {
+            toolStripButton1.Checked = false;
+            toolStripButton2.Checked = false;
+            toolStripButton3.Checked = false;
+            if (richTextBox1.SelectionFont != null)
+            {
+                toolStripComboBox1.Text = richTextBox1.SelectionFont.Size.ToString();
+                toolStripComboBox2.Text = richTextBox1.SelectionFont.FontFamily.Name;
+                comboBox3.Text = richTextBox1.SelectionColor.Name;
+                if (richTextBox1.SelectionFont.Style.ToString().IndexOf("Bold") >= 0) toolStripButton1.Checked = true;
+                if (richTextBox1.SelectionFont.Style.ToString().IndexOf("Italic") >= 0) toolStripButton2.Checked = true;
+                if (richTextBox1.SelectionFont.Style.ToString().IndexOf("Underline") >= 0) toolStripButton2.Checked = true;
+            }
+            else
+            {
+                toolStripComboBox1.Text = "";
+                toolStripComboBox2.Text = "";
+                comboBox3.Text = "";
+            }
+        }
+
+        
     }
 }
