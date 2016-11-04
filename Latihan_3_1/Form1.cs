@@ -44,7 +44,7 @@ namespace Latihan_3_1
                 }
             }
             comboBox3.SelectedIndex = 3;
-            comboBox3.Text = "Calibri";
+            comboBox2 ya .Text = "Calibri";
             comboBox3.Text = "Black";
             this.comboBox3.DrawItem += new DrawItemEventHandler(comboBox3_DrawItem);
 
@@ -66,7 +66,7 @@ namespace Latihan_3_1
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        { 
             richTextBox1.SelectionColor = Color.FromName(comboBox3.Text);
         }
 
