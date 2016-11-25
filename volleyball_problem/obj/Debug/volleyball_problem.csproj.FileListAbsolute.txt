@@ -1,0 +1,9 @@
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\volleyball_problem\bin\Debug\volleyball_problem.exe.config
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\volleyball_problem\obj\Debug\volleyball_problem.csprojResolveAssemblyReference.cache
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\volleyball_problem\obj\Debug\volleyball_problem.Form1.resources
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\volleyball_problem\obj\Debug\volleyball_problem.Properties.Resources.resources
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\volleyball_problem\obj\Debug\volleyball_problem.csproj.GenerateResource.Cache
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\volleyball_problem\bin\Debug\volleyball_problem.exe
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\volleyball_problem\bin\Debug\volleyball_problem.pdb
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\volleyball_problem\obj\Debug\volleyball_problem.exe
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\volleyball_problem\obj\Debug\volleyball_problem.pdb
