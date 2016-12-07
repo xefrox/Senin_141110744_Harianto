@@ -1,0 +1,10 @@
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\bin\Debug\Latihan_POS.exe.config
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\bin\Debug\Latihan_POS.exe
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\bin\Debug\Latihan_POS.pdb
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.csprojResolveAssemblyReference.cache
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.Form1.resources
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.Properties.Resources.resources
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.csproj.GenerateResource.Cache
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.exe
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.pdb
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.Daftar.resources
