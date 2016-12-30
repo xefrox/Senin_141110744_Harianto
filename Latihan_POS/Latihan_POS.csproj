@@ -52,12 +52,15 @@
     <Compile Include="Barang.Designer.cs">
       <DependentUpon>Barang.cs</DependentUpon>
     </Compile>
+    <Compile Include="BarangCls.cs" />
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerCls.cs" />
+    <Compile Include="DatabaseCls.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
