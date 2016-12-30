@@ -7,4 +7,5 @@ D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_
 D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.csproj.GenerateResource.Cache
 D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.exe
 D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.pdb
-D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.Daftar.resources
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.Barang.resources
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\Latihan_POS\obj\Debug\Latihan_POS.Customer.resources

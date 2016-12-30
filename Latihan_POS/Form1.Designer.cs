@@ -30,8 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editBarangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tambahBarangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CustToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,43 +42,52 @@
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(551, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(821, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editBarangToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.tambahBarangToolStripMenuItem,
+            this.CustToolStripMenuItem,
+            this.exitToolStripMenuItem1});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.menuToolStripMenuItem.Text = "Registrasi";
             // 
-            // editBarangToolStripMenuItem
+            // tambahBarangToolStripMenuItem
             // 
-            this.editBarangToolStripMenuItem.Name = "editBarangToolStripMenuItem";
-            this.editBarangToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.editBarangToolStripMenuItem.Text = "Edit Barang";
-            this.editBarangToolStripMenuItem.Click += new System.EventHandler(this.editBarangToolStripMenuItem_Click);
+            this.tambahBarangToolStripMenuItem.Name = "tambahBarangToolStripMenuItem";
+            this.tambahBarangToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tambahBarangToolStripMenuItem.Text = "Barang";
+            this.tambahBarangToolStripMenuItem.Click += new System.EventHandler(this.tambahBarangToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
+            // CustToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.CustToolStripMenuItem.Name = "CustToolStripMenuItem";
+            this.CustToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.CustToolStripMenuItem.Text = "Customer";
+            this.CustToolStripMenuItem.Click += new System.EventHandler(this.CustToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 400);
+            this.ClientSize = new System.Drawing.Size(821, 489);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Registrasi Barang";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -89,8 +99,9 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editBarangToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tambahBarangToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CustToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
     }
 }
 

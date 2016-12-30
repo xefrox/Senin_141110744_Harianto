@@ -1,0 +1,6 @@
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\LINQ_A_Console\bin\Debug\LINQ_A_Console.exe.config
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\LINQ_A_Console\obj\Debug\LINQ_A_Console.csprojResolveAssemblyReference.cache
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\LINQ_A_Console\bin\Debug\LINQ_A_Console.exe
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\LINQ_A_Console\bin\Debug\LINQ_A_Console.pdb
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\LINQ_A_Console\obj\Debug\LINQ_A_Console.exe
+D:\Mikroskil\Semester 5\Framework.NET Lanjutan\Senin_141110744_Harianto\LINQ_A_Console\obj\Debug\LINQ_A_Console.pdb

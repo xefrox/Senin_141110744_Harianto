@@ -16,19 +16,33 @@ namespace Latihan_POS
         public Form1()
         {
             InitializeComponent();
+
         }
 
-        Daftar daftar;
-        private void editBarangToolStripMenuItem_Click(object sender, EventArgs e)
+        Barang brg;
+        Customer cust;
+        private void tambahBarangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            daftar = new Daftar();
-            daftar.MdiParent = this;
-            daftar.Show();
+            brg = new Barang();
+            brg.MdiParent = this;
+            brg.Show();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void CustToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cust = new Customer();
+            cust.MdiParent = this;
+            cust.Show();
         }
     }
 }

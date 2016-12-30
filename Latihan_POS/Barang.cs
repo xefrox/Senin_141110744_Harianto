@@ -11,16 +11,17 @@ using MySql.Data.MySqlClient;
 
 namespace Latihan_POS
 {
-    public partial class Daftar : Form
+    public partial class Barang : Form
     {
-        public Daftar()
+        public Barang()
         {
             InitializeComponent();
         }
 
         private void tmbl_save_Click(object sender, EventArgs e)
         {
-            DateTime wkt = DateTime.Now;
+            DateTime wktcreate = DateTime.Now;
+            DateTime wktupdate = DateTime.Now;
             string query = "Server=localhost;Database=latihan_pos;Uid=root;Pwd=;";
             MySqlConnection con = new MySqlConnection(query);
             MySqlCommand cmd = con.CreateCommand();
@@ -30,8 +31,8 @@ namespace Latihan_POS
             cmd.Parameters.AddWithValue("@JumlahAwal", Convert.ToInt32(txtJlhAwal.Text));
             cmd.Parameters.AddWithValue("@HargaHPP", Convert.ToDecimal(txtHargaHPP.Text));
             cmd.Parameters.AddWithValue("@HargaJual", Convert.ToDecimal(txtHargaJual.Text));
-            cmd.Parameters.AddWithValue("@created_at", wkt);
-            cmd.Parameters.AddWithValue("@updated_at", wkt);
+            cmd.Parameters.AddWithValue("@created_at", wktcreate);
+            cmd.Parameters.AddWithValue("@updated_at", wktupdate);
             try
             {
                 con.Open();
@@ -58,6 +59,11 @@ namespace Latihan_POS
         private void tmbl_exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
